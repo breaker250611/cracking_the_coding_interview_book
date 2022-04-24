@@ -21,7 +21,19 @@ void no(){
 }
 
 void solve() {
-   
+string str;
+cin>>str;
+vector<bool>vp(128,false);
+
+for(int i = 0;i<str.size();i++){
+    if(vp[str[i]-'a']){
+        cout<<false;
+        return;
+    }
+    vp[str[i]-'a'] = true;
+}   
+cout<<true<<endl;
+return;
 }
 
 int main() {
