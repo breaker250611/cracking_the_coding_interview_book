@@ -29,7 +29,6 @@ void solve() {
  
  for(int i = 0;i<str.size();i++){
  	int temp = str[i]-'a';
- 	cout<<"temp"<<temp<<endl;
  	if((check & 1 << temp)>0){
  		cout<<"false"<<endl;
  		return;
