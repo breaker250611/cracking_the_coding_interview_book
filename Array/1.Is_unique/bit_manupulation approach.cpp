@@ -33,7 +33,7 @@ void solve() {
  		cout<<"false"<<endl;
  		return;
  	}
- 	check = check xor (1<<temp);
+ 	check = (check xor (1<<temp));
  }
  cout<<"true";
  return;
